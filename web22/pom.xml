@@ -2,8 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>web22</groupId>
   <artifactId>web22</artifactId>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>REGISTRO</name>
+  <url>http://maven.apache.org</url>
   <dependencies>
   	<dependency>
   		<groupId>org.postgresql</groupId>
@@ -12,20 +14,10 @@
   	</dependency>
   </dependencies>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-          <fork>true</fork>
-		  <executable>C:\Program Files\Java\jdk1.8.0_251\bin\javac</executable>
-        </configuration>
-      </plugin>
-      <plugin>
-      	<groupId>org.apache.maven.plugins</groupId>
+    <finalName>registro</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.3</version>
 				<executions>
@@ -46,7 +38,8 @@
 						</configuration>
 					</execution>
 				</executions>
-      </plugin>
-    </plugins>
+			</plugin>
+
+		</plugins>
   </build>
 </project>
