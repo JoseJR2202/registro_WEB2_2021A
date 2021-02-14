@@ -4,6 +4,7 @@
   <artifactId>web22</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>REGISTRO</name>
+  <url>http://maven.apache.org</url>
   <dependencies>
   	<dependency>
   		<groupId>org.postgresql</groupId>
@@ -12,6 +13,7 @@
   	</dependency>
   </dependencies>
   <build>
+  	<finalName>Registro</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
